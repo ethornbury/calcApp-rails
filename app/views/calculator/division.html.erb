@@ -1,0 +1,9 @@
+<h1>Division</h1>
+
+<%= form_tag '/division' do %>
+    <%= text_field_tag :number1 %>
+    <%= text_field_tag :number2 %>
+    <%= submit_tag " / " %>
+<% end %>
+
+<%= @num1 %> - <%= @num2 %> = <%= @result %>

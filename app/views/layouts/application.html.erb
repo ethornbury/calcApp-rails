@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>CalculatorApp</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+     
+    <%= link_to "Home", root_path %>
+    <%= link_to "sum", sum_path %>
+    <%= link_to "minus", minus_path %>
+    <%= link_to "multiplication", multiplication_path %>
+    <%#= link_to "division", division_path %>
+    <%= yield %>
+  </body>
+</html>
